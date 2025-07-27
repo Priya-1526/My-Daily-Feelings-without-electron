@@ -11,6 +11,7 @@ body{
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    overflow-x: hidden;
 }
 .mainDiv {
     width: 100vw;
@@ -247,4 +248,60 @@ body{
 .hidden {
     opacity: 0;
     pointer-events: none; /* Optional: Prevent clicks on the hidden button */
+}
+
+/* Make layout responsive for small screens */
+@media screen and (max-width: 768px) {
+  .mainDiv, .dashboardDiv {
+    padding: 0 1rem;
+  }
+
+  .titleDiv {
+    width: 100%;
+  }
+
+  .emotionDiv h2,
+  .explainFeels h2,
+  .wishTmr h2 {
+    font-size: 20px;
+  }
+
+   .emoBtn {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 8px 12px;
+    width: 100%;
+    touch-action: pan-x;
+    /* scrollbar-width: none;         */
+    /* -ms-overflow-style: none;       */
+  }
+
+  /*.emoBtn::-webkit-scrollbar {
+    display: none;                
+  }*/
+
+
+  .btn {
+    width: 30%;
+    max-width: 120px;
+    margin: 4px;
+  }
+
+  .bottomDiv {
+    flex-direction: column;
+    width: 100%;
+    gap: 16px;
+  }
+
+  .bottomDiv textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  #save-btn {
+    margin-bottom: 24px;
+  }
 }
