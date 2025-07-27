@@ -8,7 +8,7 @@
 
 ## 🔗 Live Demo
 
-👉 [Click here to try it live](https://Priya-1526.github.io/My-Daily_Feelings_without-Electron/)  
+👉 [Click here to try it live](https://priya-1526.github.io/My-Daily-Feelings-without-electron/)
 *(No login required, works in browser)*
 
 ---
